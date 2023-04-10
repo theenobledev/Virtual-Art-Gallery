@@ -38,6 +38,25 @@ nav a:hover {
     color: #f1c40f;
 }
 
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b0aaaa;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
 .featured-artworks {
     padding: 2rem;
 }
@@ -57,10 +76,10 @@ nav a:hover {
     overflow: hidden;
 }
 
-.artwork img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.artwork:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
 }
 
 .gallery-container {
@@ -75,6 +94,12 @@ nav a:hover {
 .artwork img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+
+.artwork img:hover {
+    filter: brightness(0.8);
 }
 
 .artwork-page {
@@ -191,6 +216,16 @@ nav a:hover {
 .contact-form button:hover {
     background-color: #f39c12;
     color: #fff;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.filter-container label {
+    margin-right: 0.5rem;
 }
 
 footer {
