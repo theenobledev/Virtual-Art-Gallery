@@ -63,6 +63,20 @@ nav a:hover {
     object-fit: cover;
 }
 
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.artwork img {
+    width: 100%;
+    height: auto;
+}
+
 footer {
     background-color: #222;
     padding: 1rem 0;
