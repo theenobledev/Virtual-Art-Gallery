@@ -16,3 +16,57 @@ body {
     margin: 0 auto;
     padding: 0 1rem;
 }
+
+header {
+    background-color: #222;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+.featured-artworks {
+    padding: 2rem;
+}
+
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.artwork {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.artwork img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #222;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+}
+
